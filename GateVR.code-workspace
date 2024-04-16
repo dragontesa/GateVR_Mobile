@@ -1,0 +1,3013 @@
+{
+	"folders": [
+		{
+			"name": "GateVR",
+			"path": "."
+		},
+		{
+			"name": "UE5",
+			"path": "C:\\UnrealEngine"
+		}
+	],
+	"settings": {
+		"typescript.tsc.autoDetect": "off",
+		"npm.autoDetect": "off"
+	},
+	"extensions": {
+		"recommendations": [
+			"ms-vscode.cpptools",
+			"ms-dotnettools.csharp"
+		]
+	},
+	"tasks": {
+		"version": "2.0.0",
+		"tasks": [
+			{
+				"label": "GateVR Win64 Debug Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"GateVR",
+					"Win64",
+					"Debug",
+					"C:\\Users\\Dragon Tesa\\spider.w\\teamgate\\GateVR\\__src\\dragontesa_pc_gatevr_mobile\\GateVR\\GateVR.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\UnrealEngine"
+				}
+			},
+			{
+				"label": "GateVR Win64 Debug Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"GateVR",
+					"Win64",
+					"Debug",
+					"C:\\Users\\Dragon Tesa\\spider.w\\teamgate\\GateVR\\__src\\dragontesa_pc_gatevr_mobile\\GateVR\\GateVR.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"GateVR Win64 Debug Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\UnrealEngine"
+				}
+			},
+			{
+				"label": "GateVR Win64 Debug Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"GateVR",
+					"Win64",
+					"Debug",
+					"C:\\Users\\Dragon Tesa\\spider.w\\teamgate\\GateVR\\__src\\dragontesa_pc_gatevr_mobile\\GateVR\\GateVR.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\UnrealEngine"
+				}
+			},
+			{
+				"label": "GateVR Win64 DebugGame Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"GateVR",
+					"Win64",
+					"DebugGame",
+					"C:\\Users\\Dragon Tesa\\spider.w\\teamgate\\GateVR\\__src\\dragontesa_pc_gatevr_mobile\\GateVR\\GateVR.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\UnrealEngine"
+				}
+			},
+			{
+				"label": "GateVR Win64 DebugGame Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"GateVR",
+					"Win64",
+					"DebugGame",
+					"C:\\Users\\Dragon Tesa\\spider.w\\teamgate\\GateVR\\__src\\dragontesa_pc_gatevr_mobile\\GateVR\\GateVR.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"GateVR Win64 DebugGame Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\UnrealEngine"
+				}
+			},
+			{
+				"label": "GateVR Win64 DebugGame Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"GateVR",
+					"Win64",
+					"DebugGame",
+					"C:\\Users\\Dragon Tesa\\spider.w\\teamgate\\GateVR\\__src\\dragontesa_pc_gatevr_mobile\\GateVR\\GateVR.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\UnrealEngine"
+				}
+			},
+			{
+				"label": "GateVR Win64 Development Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"GateVR",
+					"Win64",
+					"Development",
+					"C:\\Users\\Dragon Tesa\\spider.w\\teamgate\\GateVR\\__src\\dragontesa_pc_gatevr_mobile\\GateVR\\GateVR.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\UnrealEngine"
+				}
+			},
+			{
+				"label": "GateVR Win64 Development Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"GateVR",
+					"Win64",
+					"Development",
+					"C:\\Users\\Dragon Tesa\\spider.w\\teamgate\\GateVR\\__src\\dragontesa_pc_gatevr_mobile\\GateVR\\GateVR.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"GateVR Win64 Development Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\UnrealEngine"
+				}
+			},
+			{
+				"label": "GateVR Win64 Development Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"GateVR",
+					"Win64",
+					"Development",
+					"C:\\Users\\Dragon Tesa\\spider.w\\teamgate\\GateVR\\__src\\dragontesa_pc_gatevr_mobile\\GateVR\\GateVR.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\UnrealEngine"
+				}
+			},
+			{
+				"label": "GateVR Win64 Test Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"GateVR",
+					"Win64",
+					"Test",
+					"C:\\Users\\Dragon Tesa\\spider.w\\teamgate\\GateVR\\__src\\dragontesa_pc_gatevr_mobile\\GateVR\\GateVR.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\UnrealEngine"
+				}
+			},
+			{
+				"label": "GateVR Win64 Test Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"GateVR",
+					"Win64",
+					"Test",
+					"C:\\Users\\Dragon Tesa\\spider.w\\teamgate\\GateVR\\__src\\dragontesa_pc_gatevr_mobile\\GateVR\\GateVR.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"GateVR Win64 Test Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\UnrealEngine"
+				}
+			},
+			{
+				"label": "GateVR Win64 Test Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"GateVR",
+					"Win64",
+					"Test",
+					"C:\\Users\\Dragon Tesa\\spider.w\\teamgate\\GateVR\\__src\\dragontesa_pc_gatevr_mobile\\GateVR\\GateVR.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\UnrealEngine"
+				}
+			},
+			{
+				"label": "GateVR Win64 Shipping Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"GateVR",
+					"Win64",
+					"Shipping",
+					"C:\\Users\\Dragon Tesa\\spider.w\\teamgate\\GateVR\\__src\\dragontesa_pc_gatevr_mobile\\GateVR\\GateVR.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\UnrealEngine"
+				}
+			},
+			{
+				"label": "GateVR Win64 Shipping Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"GateVR",
+					"Win64",
+					"Shipping",
+					"C:\\Users\\Dragon Tesa\\spider.w\\teamgate\\GateVR\\__src\\dragontesa_pc_gatevr_mobile\\GateVR\\GateVR.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"GateVR Win64 Shipping Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\UnrealEngine"
+				}
+			},
+			{
+				"label": "GateVR Win64 Shipping Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"GateVR",
+					"Win64",
+					"Shipping",
+					"C:\\Users\\Dragon Tesa\\spider.w\\teamgate\\GateVR\\__src\\dragontesa_pc_gatevr_mobile\\GateVR\\GateVR.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\UnrealEngine"
+				}
+			},
+			{
+				"label": "GateVR Android Debug Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"GateVR",
+					"Android",
+					"Debug",
+					"C:\\Users\\Dragon Tesa\\spider.w\\teamgate\\GateVR\\__src\\dragontesa_pc_gatevr_mobile\\GateVR\\GateVR.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\UnrealEngine"
+				}
+			},
+			{
+				"label": "GateVR Android Debug Cook+Deploy",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\RunUAT.bat",
+				"args": [
+					"BuildCookRun",
+					"-ScriptsForProject=C:/Users/Dragon Tesa/spider.w/teamgate/GateVR/__src/dragontesa_pc_gatevr_mobile/GateVR/GateVR.uproject",
+					"-Project=C:/Users/Dragon Tesa/spider.w/teamgate/GateVR/__src/dragontesa_pc_gatevr_mobile/GateVR/GateVR.uproject",
+					"-noP4",
+					"-ClientConfig=Debug",
+					"-ServerConfig=Debug",
+					"-NoCompileEditor",
+					"-utf8output",
+					"-Platform=Android",
+					"-TargetPlatform=Android",
+					"-ini:Game:[/Script/UnrealEd.ProjectPackagingSettings]:BlueprintNativizationMethod=Disabled",
+					"-Compressed",
+					"-IterativeCooking",
+					"-IterativeDeploy",
+					"-Cook",
+					"-Stage",
+					"-Deploy"
+				],
+				"dependsOn": [
+					"GateVREditor Win64 Development Build",
+					"GateVR Android Debug Build"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\UnrealEngine"
+				}
+			},
+			{
+				"label": "GateVR Android Debug Cook",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\RunUAT.bat",
+				"args": [
+					"BuildCookRun",
+					"-ScriptsForProject=C:/Users/Dragon Tesa/spider.w/teamgate/GateVR/__src/dragontesa_pc_gatevr_mobile/GateVR/GateVR.uproject",
+					"-Project=C:/Users/Dragon Tesa/spider.w/teamgate/GateVR/__src/dragontesa_pc_gatevr_mobile/GateVR/GateVR.uproject",
+					"-noP4",
+					"-ClientConfig=Debug",
+					"-ServerConfig=Debug",
+					"-NoCompileEditor",
+					"-utf8output",
+					"-Platform=Android",
+					"-TargetPlatform=Android",
+					"-ini:Game:[/Script/UnrealEd.ProjectPackagingSettings]:BlueprintNativizationMethod=Disabled",
+					"-Compressed",
+					"-IterativeCooking",
+					"-IterativeDeploy",
+					"-Cook"
+				],
+				"dependsOn": [
+					"GateVREditor Win64 Development Build",
+					"GateVR Android Debug Build"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\UnrealEngine"
+				}
+			},
+			{
+				"label": "GateVR Android Debug Deploy",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\RunUAT.bat",
+				"args": [
+					"BuildCookRun",
+					"-ScriptsForProject=C:/Users/Dragon Tesa/spider.w/teamgate/GateVR/__src/dragontesa_pc_gatevr_mobile/GateVR/GateVR.uproject",
+					"-Project=C:/Users/Dragon Tesa/spider.w/teamgate/GateVR/__src/dragontesa_pc_gatevr_mobile/GateVR/GateVR.uproject",
+					"-noP4",
+					"-ClientConfig=Debug",
+					"-ServerConfig=Debug",
+					"-NoCompileEditor",
+					"-utf8output",
+					"-Platform=Android",
+					"-TargetPlatform=Android",
+					"-ini:Game:[/Script/UnrealEd.ProjectPackagingSettings]:BlueprintNativizationMethod=Disabled",
+					"-Compressed",
+					"-IterativeCooking",
+					"-IterativeDeploy",
+					"-DeploySoToDevice",
+					"-SkipCook",
+					"-Stage",
+					"-Deploy"
+				],
+				"dependsOn": [
+					"GateVR Android Debug Build"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\UnrealEngine"
+				}
+			},
+			{
+				"label": "GateVR Android Debug Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"GateVR",
+					"Android",
+					"Debug",
+					"C:\\Users\\Dragon Tesa\\spider.w\\teamgate\\GateVR\\__src\\dragontesa_pc_gatevr_mobile\\GateVR\\GateVR.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"GateVR Android Debug Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\UnrealEngine"
+				}
+			},
+			{
+				"label": "GateVR Android Debug Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"GateVR",
+					"Android",
+					"Debug",
+					"C:\\Users\\Dragon Tesa\\spider.w\\teamgate\\GateVR\\__src\\dragontesa_pc_gatevr_mobile\\GateVR\\GateVR.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\UnrealEngine"
+				}
+			},
+			{
+				"label": "GateVR Android DebugGame Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"GateVR",
+					"Android",
+					"DebugGame",
+					"C:\\Users\\Dragon Tesa\\spider.w\\teamgate\\GateVR\\__src\\dragontesa_pc_gatevr_mobile\\GateVR\\GateVR.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\UnrealEngine"
+				}
+			},
+			{
+				"label": "GateVR Android DebugGame Cook+Deploy",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\RunUAT.bat",
+				"args": [
+					"BuildCookRun",
+					"-ScriptsForProject=C:/Users/Dragon Tesa/spider.w/teamgate/GateVR/__src/dragontesa_pc_gatevr_mobile/GateVR/GateVR.uproject",
+					"-Project=C:/Users/Dragon Tesa/spider.w/teamgate/GateVR/__src/dragontesa_pc_gatevr_mobile/GateVR/GateVR.uproject",
+					"-noP4",
+					"-ClientConfig=DebugGame",
+					"-ServerConfig=DebugGame",
+					"-NoCompileEditor",
+					"-utf8output",
+					"-Platform=Android",
+					"-TargetPlatform=Android",
+					"-ini:Game:[/Script/UnrealEd.ProjectPackagingSettings]:BlueprintNativizationMethod=Disabled",
+					"-Compressed",
+					"-IterativeCooking",
+					"-IterativeDeploy",
+					"-Cook",
+					"-Stage",
+					"-Deploy"
+				],
+				"dependsOn": [
+					"GateVREditor Win64 Development Build",
+					"GateVR Android DebugGame Build"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\UnrealEngine"
+				}
+			},
+			{
+				"label": "GateVR Android DebugGame Cook",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\RunUAT.bat",
+				"args": [
+					"BuildCookRun",
+					"-ScriptsForProject=C:/Users/Dragon Tesa/spider.w/teamgate/GateVR/__src/dragontesa_pc_gatevr_mobile/GateVR/GateVR.uproject",
+					"-Project=C:/Users/Dragon Tesa/spider.w/teamgate/GateVR/__src/dragontesa_pc_gatevr_mobile/GateVR/GateVR.uproject",
+					"-noP4",
+					"-ClientConfig=DebugGame",
+					"-ServerConfig=DebugGame",
+					"-NoCompileEditor",
+					"-utf8output",
+					"-Platform=Android",
+					"-TargetPlatform=Android",
+					"-ini:Game:[/Script/UnrealEd.ProjectPackagingSettings]:BlueprintNativizationMethod=Disabled",
+					"-Compressed",
+					"-IterativeCooking",
+					"-IterativeDeploy",
+					"-Cook"
+				],
+				"dependsOn": [
+					"GateVREditor Win64 Development Build",
+					"GateVR Android DebugGame Build"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\UnrealEngine"
+				}
+			},
+			{
+				"label": "GateVR Android DebugGame Deploy",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\RunUAT.bat",
+				"args": [
+					"BuildCookRun",
+					"-ScriptsForProject=C:/Users/Dragon Tesa/spider.w/teamgate/GateVR/__src/dragontesa_pc_gatevr_mobile/GateVR/GateVR.uproject",
+					"-Project=C:/Users/Dragon Tesa/spider.w/teamgate/GateVR/__src/dragontesa_pc_gatevr_mobile/GateVR/GateVR.uproject",
+					"-noP4",
+					"-ClientConfig=DebugGame",
+					"-ServerConfig=DebugGame",
+					"-NoCompileEditor",
+					"-utf8output",
+					"-Platform=Android",
+					"-TargetPlatform=Android",
+					"-ini:Game:[/Script/UnrealEd.ProjectPackagingSettings]:BlueprintNativizationMethod=Disabled",
+					"-Compressed",
+					"-IterativeCooking",
+					"-IterativeDeploy",
+					"-DeploySoToDevice",
+					"-SkipCook",
+					"-Stage",
+					"-Deploy"
+				],
+				"dependsOn": [
+					"GateVR Android DebugGame Build"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\UnrealEngine"
+				}
+			},
+			{
+				"label": "GateVR Android DebugGame Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"GateVR",
+					"Android",
+					"DebugGame",
+					"C:\\Users\\Dragon Tesa\\spider.w\\teamgate\\GateVR\\__src\\dragontesa_pc_gatevr_mobile\\GateVR\\GateVR.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"GateVR Android DebugGame Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\UnrealEngine"
+				}
+			},
+			{
+				"label": "GateVR Android DebugGame Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"GateVR",
+					"Android",
+					"DebugGame",
+					"C:\\Users\\Dragon Tesa\\spider.w\\teamgate\\GateVR\\__src\\dragontesa_pc_gatevr_mobile\\GateVR\\GateVR.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\UnrealEngine"
+				}
+			},
+			{
+				"label": "GateVR Android Development Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"GateVR",
+					"Android",
+					"Development",
+					"C:\\Users\\Dragon Tesa\\spider.w\\teamgate\\GateVR\\__src\\dragontesa_pc_gatevr_mobile\\GateVR\\GateVR.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\UnrealEngine"
+				}
+			},
+			{
+				"label": "GateVR Android Development Cook+Deploy",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\RunUAT.bat",
+				"args": [
+					"BuildCookRun",
+					"-ScriptsForProject=C:/Users/Dragon Tesa/spider.w/teamgate/GateVR/__src/dragontesa_pc_gatevr_mobile/GateVR/GateVR.uproject",
+					"-Project=C:/Users/Dragon Tesa/spider.w/teamgate/GateVR/__src/dragontesa_pc_gatevr_mobile/GateVR/GateVR.uproject",
+					"-noP4",
+					"-ClientConfig=Development",
+					"-ServerConfig=Development",
+					"-NoCompileEditor",
+					"-utf8output",
+					"-Platform=Android",
+					"-TargetPlatform=Android",
+					"-ini:Game:[/Script/UnrealEd.ProjectPackagingSettings]:BlueprintNativizationMethod=Disabled",
+					"-Compressed",
+					"-IterativeCooking",
+					"-IterativeDeploy",
+					"-Cook",
+					"-Stage",
+					"-Deploy"
+				],
+				"dependsOn": [
+					"GateVREditor Win64 Development Build",
+					"GateVR Android Development Build"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\UnrealEngine"
+				}
+			},
+			{
+				"label": "GateVR Android Development Cook",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\RunUAT.bat",
+				"args": [
+					"BuildCookRun",
+					"-ScriptsForProject=C:/Users/Dragon Tesa/spider.w/teamgate/GateVR/__src/dragontesa_pc_gatevr_mobile/GateVR/GateVR.uproject",
+					"-Project=C:/Users/Dragon Tesa/spider.w/teamgate/GateVR/__src/dragontesa_pc_gatevr_mobile/GateVR/GateVR.uproject",
+					"-noP4",
+					"-ClientConfig=Development",
+					"-ServerConfig=Development",
+					"-NoCompileEditor",
+					"-utf8output",
+					"-Platform=Android",
+					"-TargetPlatform=Android",
+					"-ini:Game:[/Script/UnrealEd.ProjectPackagingSettings]:BlueprintNativizationMethod=Disabled",
+					"-Compressed",
+					"-IterativeCooking",
+					"-IterativeDeploy",
+					"-Cook"
+				],
+				"dependsOn": [
+					"GateVREditor Win64 Development Build",
+					"GateVR Android Development Build"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\UnrealEngine"
+				}
+			},
+			{
+				"label": "GateVR Android Development Deploy",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\RunUAT.bat",
+				"args": [
+					"BuildCookRun",
+					"-ScriptsForProject=C:/Users/Dragon Tesa/spider.w/teamgate/GateVR/__src/dragontesa_pc_gatevr_mobile/GateVR/GateVR.uproject",
+					"-Project=C:/Users/Dragon Tesa/spider.w/teamgate/GateVR/__src/dragontesa_pc_gatevr_mobile/GateVR/GateVR.uproject",
+					"-noP4",
+					"-ClientConfig=Development",
+					"-ServerConfig=Development",
+					"-NoCompileEditor",
+					"-utf8output",
+					"-Platform=Android",
+					"-TargetPlatform=Android",
+					"-ini:Game:[/Script/UnrealEd.ProjectPackagingSettings]:BlueprintNativizationMethod=Disabled",
+					"-Compressed",
+					"-IterativeCooking",
+					"-IterativeDeploy",
+					"-DeploySoToDevice",
+					"-SkipCook",
+					"-Stage",
+					"-Deploy"
+				],
+				"dependsOn": [
+					"GateVR Android Development Build"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\UnrealEngine"
+				}
+			},
+			{
+				"label": "GateVR Android Development Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"GateVR",
+					"Android",
+					"Development",
+					"C:\\Users\\Dragon Tesa\\spider.w\\teamgate\\GateVR\\__src\\dragontesa_pc_gatevr_mobile\\GateVR\\GateVR.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"GateVR Android Development Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\UnrealEngine"
+				}
+			},
+			{
+				"label": "GateVR Android Development Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"GateVR",
+					"Android",
+					"Development",
+					"C:\\Users\\Dragon Tesa\\spider.w\\teamgate\\GateVR\\__src\\dragontesa_pc_gatevr_mobile\\GateVR\\GateVR.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\UnrealEngine"
+				}
+			},
+			{
+				"label": "GateVR Android Test Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"GateVR",
+					"Android",
+					"Test",
+					"C:\\Users\\Dragon Tesa\\spider.w\\teamgate\\GateVR\\__src\\dragontesa_pc_gatevr_mobile\\GateVR\\GateVR.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\UnrealEngine"
+				}
+			},
+			{
+				"label": "GateVR Android Test Cook+Deploy",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\RunUAT.bat",
+				"args": [
+					"BuildCookRun",
+					"-ScriptsForProject=C:/Users/Dragon Tesa/spider.w/teamgate/GateVR/__src/dragontesa_pc_gatevr_mobile/GateVR/GateVR.uproject",
+					"-Project=C:/Users/Dragon Tesa/spider.w/teamgate/GateVR/__src/dragontesa_pc_gatevr_mobile/GateVR/GateVR.uproject",
+					"-noP4",
+					"-ClientConfig=Test",
+					"-ServerConfig=Test",
+					"-NoCompileEditor",
+					"-utf8output",
+					"-Platform=Android",
+					"-TargetPlatform=Android",
+					"-ini:Game:[/Script/UnrealEd.ProjectPackagingSettings]:BlueprintNativizationMethod=Disabled",
+					"-Compressed",
+					"-IterativeCooking",
+					"-IterativeDeploy",
+					"-Cook",
+					"-Stage",
+					"-Deploy"
+				],
+				"dependsOn": [
+					"GateVREditor Win64 Development Build",
+					"GateVR Android Test Build"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\UnrealEngine"
+				}
+			},
+			{
+				"label": "GateVR Android Test Cook",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\RunUAT.bat",
+				"args": [
+					"BuildCookRun",
+					"-ScriptsForProject=C:/Users/Dragon Tesa/spider.w/teamgate/GateVR/__src/dragontesa_pc_gatevr_mobile/GateVR/GateVR.uproject",
+					"-Project=C:/Users/Dragon Tesa/spider.w/teamgate/GateVR/__src/dragontesa_pc_gatevr_mobile/GateVR/GateVR.uproject",
+					"-noP4",
+					"-ClientConfig=Test",
+					"-ServerConfig=Test",
+					"-NoCompileEditor",
+					"-utf8output",
+					"-Platform=Android",
+					"-TargetPlatform=Android",
+					"-ini:Game:[/Script/UnrealEd.ProjectPackagingSettings]:BlueprintNativizationMethod=Disabled",
+					"-Compressed",
+					"-IterativeCooking",
+					"-IterativeDeploy",
+					"-Cook"
+				],
+				"dependsOn": [
+					"GateVREditor Win64 Development Build",
+					"GateVR Android Test Build"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\UnrealEngine"
+				}
+			},
+			{
+				"label": "GateVR Android Test Deploy",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\RunUAT.bat",
+				"args": [
+					"BuildCookRun",
+					"-ScriptsForProject=C:/Users/Dragon Tesa/spider.w/teamgate/GateVR/__src/dragontesa_pc_gatevr_mobile/GateVR/GateVR.uproject",
+					"-Project=C:/Users/Dragon Tesa/spider.w/teamgate/GateVR/__src/dragontesa_pc_gatevr_mobile/GateVR/GateVR.uproject",
+					"-noP4",
+					"-ClientConfig=Test",
+					"-ServerConfig=Test",
+					"-NoCompileEditor",
+					"-utf8output",
+					"-Platform=Android",
+					"-TargetPlatform=Android",
+					"-ini:Game:[/Script/UnrealEd.ProjectPackagingSettings]:BlueprintNativizationMethod=Disabled",
+					"-Compressed",
+					"-IterativeCooking",
+					"-IterativeDeploy",
+					"-DeploySoToDevice",
+					"-SkipCook",
+					"-Stage",
+					"-Deploy"
+				],
+				"dependsOn": [
+					"GateVR Android Test Build"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\UnrealEngine"
+				}
+			},
+			{
+				"label": "GateVR Android Test Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"GateVR",
+					"Android",
+					"Test",
+					"C:\\Users\\Dragon Tesa\\spider.w\\teamgate\\GateVR\\__src\\dragontesa_pc_gatevr_mobile\\GateVR\\GateVR.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"GateVR Android Test Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\UnrealEngine"
+				}
+			},
+			{
+				"label": "GateVR Android Test Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"GateVR",
+					"Android",
+					"Test",
+					"C:\\Users\\Dragon Tesa\\spider.w\\teamgate\\GateVR\\__src\\dragontesa_pc_gatevr_mobile\\GateVR\\GateVR.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\UnrealEngine"
+				}
+			},
+			{
+				"label": "GateVR Android Shipping Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"GateVR",
+					"Android",
+					"Shipping",
+					"C:\\Users\\Dragon Tesa\\spider.w\\teamgate\\GateVR\\__src\\dragontesa_pc_gatevr_mobile\\GateVR\\GateVR.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\UnrealEngine"
+				}
+			},
+			{
+				"label": "GateVR Android Shipping Cook+Deploy",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\RunUAT.bat",
+				"args": [
+					"BuildCookRun",
+					"-ScriptsForProject=C:/Users/Dragon Tesa/spider.w/teamgate/GateVR/__src/dragontesa_pc_gatevr_mobile/GateVR/GateVR.uproject",
+					"-Project=C:/Users/Dragon Tesa/spider.w/teamgate/GateVR/__src/dragontesa_pc_gatevr_mobile/GateVR/GateVR.uproject",
+					"-noP4",
+					"-ClientConfig=Shipping",
+					"-ServerConfig=Shipping",
+					"-NoCompileEditor",
+					"-utf8output",
+					"-Platform=Android",
+					"-TargetPlatform=Android",
+					"-ini:Game:[/Script/UnrealEd.ProjectPackagingSettings]:BlueprintNativizationMethod=Disabled",
+					"-Compressed",
+					"-IterativeCooking",
+					"-IterativeDeploy",
+					"-Cook",
+					"-Stage",
+					"-Deploy"
+				],
+				"dependsOn": [
+					"GateVREditor Win64 Development Build",
+					"GateVR Android Shipping Build"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\UnrealEngine"
+				}
+			},
+			{
+				"label": "GateVR Android Shipping Cook",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\RunUAT.bat",
+				"args": [
+					"BuildCookRun",
+					"-ScriptsForProject=C:/Users/Dragon Tesa/spider.w/teamgate/GateVR/__src/dragontesa_pc_gatevr_mobile/GateVR/GateVR.uproject",
+					"-Project=C:/Users/Dragon Tesa/spider.w/teamgate/GateVR/__src/dragontesa_pc_gatevr_mobile/GateVR/GateVR.uproject",
+					"-noP4",
+					"-ClientConfig=Shipping",
+					"-ServerConfig=Shipping",
+					"-NoCompileEditor",
+					"-utf8output",
+					"-Platform=Android",
+					"-TargetPlatform=Android",
+					"-ini:Game:[/Script/UnrealEd.ProjectPackagingSettings]:BlueprintNativizationMethod=Disabled",
+					"-Compressed",
+					"-IterativeCooking",
+					"-IterativeDeploy",
+					"-Cook"
+				],
+				"dependsOn": [
+					"GateVREditor Win64 Development Build",
+					"GateVR Android Shipping Build"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\UnrealEngine"
+				}
+			},
+			{
+				"label": "GateVR Android Shipping Deploy",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\RunUAT.bat",
+				"args": [
+					"BuildCookRun",
+					"-ScriptsForProject=C:/Users/Dragon Tesa/spider.w/teamgate/GateVR/__src/dragontesa_pc_gatevr_mobile/GateVR/GateVR.uproject",
+					"-Project=C:/Users/Dragon Tesa/spider.w/teamgate/GateVR/__src/dragontesa_pc_gatevr_mobile/GateVR/GateVR.uproject",
+					"-noP4",
+					"-ClientConfig=Shipping",
+					"-ServerConfig=Shipping",
+					"-NoCompileEditor",
+					"-utf8output",
+					"-Platform=Android",
+					"-TargetPlatform=Android",
+					"-ini:Game:[/Script/UnrealEd.ProjectPackagingSettings]:BlueprintNativizationMethod=Disabled",
+					"-Compressed",
+					"-IterativeCooking",
+					"-IterativeDeploy",
+					"-DeploySoToDevice",
+					"-SkipCook",
+					"-Stage",
+					"-Deploy"
+				],
+				"dependsOn": [
+					"GateVR Android Shipping Build"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\UnrealEngine"
+				}
+			},
+			{
+				"label": "GateVR Android Shipping Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"GateVR",
+					"Android",
+					"Shipping",
+					"C:\\Users\\Dragon Tesa\\spider.w\\teamgate\\GateVR\\__src\\dragontesa_pc_gatevr_mobile\\GateVR\\GateVR.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"GateVR Android Shipping Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\UnrealEngine"
+				}
+			},
+			{
+				"label": "GateVR Android Shipping Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"GateVR",
+					"Android",
+					"Shipping",
+					"C:\\Users\\Dragon Tesa\\spider.w\\teamgate\\GateVR\\__src\\dragontesa_pc_gatevr_mobile\\GateVR\\GateVR.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\UnrealEngine"
+				}
+			},
+			{
+				"label": "GateVRClient Win64 Debug Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"GateVRClient",
+					"Win64",
+					"Debug",
+					"C:\\Users\\Dragon Tesa\\spider.w\\teamgate\\GateVR\\__src\\dragontesa_pc_gatevr_mobile\\GateVR\\GateVR.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\UnrealEngine"
+				}
+			},
+			{
+				"label": "GateVRClient Win64 Debug Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"GateVRClient",
+					"Win64",
+					"Debug",
+					"C:\\Users\\Dragon Tesa\\spider.w\\teamgate\\GateVR\\__src\\dragontesa_pc_gatevr_mobile\\GateVR\\GateVR.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"GateVRClient Win64 Debug Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\UnrealEngine"
+				}
+			},
+			{
+				"label": "GateVRClient Win64 Debug Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"GateVRClient",
+					"Win64",
+					"Debug",
+					"C:\\Users\\Dragon Tesa\\spider.w\\teamgate\\GateVR\\__src\\dragontesa_pc_gatevr_mobile\\GateVR\\GateVR.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\UnrealEngine"
+				}
+			},
+			{
+				"label": "GateVRClient Win64 DebugGame Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"GateVRClient",
+					"Win64",
+					"DebugGame",
+					"C:\\Users\\Dragon Tesa\\spider.w\\teamgate\\GateVR\\__src\\dragontesa_pc_gatevr_mobile\\GateVR\\GateVR.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\UnrealEngine"
+				}
+			},
+			{
+				"label": "GateVRClient Win64 DebugGame Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"GateVRClient",
+					"Win64",
+					"DebugGame",
+					"C:\\Users\\Dragon Tesa\\spider.w\\teamgate\\GateVR\\__src\\dragontesa_pc_gatevr_mobile\\GateVR\\GateVR.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"GateVRClient Win64 DebugGame Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\UnrealEngine"
+				}
+			},
+			{
+				"label": "GateVRClient Win64 DebugGame Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"GateVRClient",
+					"Win64",
+					"DebugGame",
+					"C:\\Users\\Dragon Tesa\\spider.w\\teamgate\\GateVR\\__src\\dragontesa_pc_gatevr_mobile\\GateVR\\GateVR.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\UnrealEngine"
+				}
+			},
+			{
+				"label": "GateVRClient Win64 Development Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"GateVRClient",
+					"Win64",
+					"Development",
+					"C:\\Users\\Dragon Tesa\\spider.w\\teamgate\\GateVR\\__src\\dragontesa_pc_gatevr_mobile\\GateVR\\GateVR.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\UnrealEngine"
+				}
+			},
+			{
+				"label": "GateVRClient Win64 Development Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"GateVRClient",
+					"Win64",
+					"Development",
+					"C:\\Users\\Dragon Tesa\\spider.w\\teamgate\\GateVR\\__src\\dragontesa_pc_gatevr_mobile\\GateVR\\GateVR.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"GateVRClient Win64 Development Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\UnrealEngine"
+				}
+			},
+			{
+				"label": "GateVRClient Win64 Development Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"GateVRClient",
+					"Win64",
+					"Development",
+					"C:\\Users\\Dragon Tesa\\spider.w\\teamgate\\GateVR\\__src\\dragontesa_pc_gatevr_mobile\\GateVR\\GateVR.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\UnrealEngine"
+				}
+			},
+			{
+				"label": "GateVRClient Win64 Test Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"GateVRClient",
+					"Win64",
+					"Test",
+					"C:\\Users\\Dragon Tesa\\spider.w\\teamgate\\GateVR\\__src\\dragontesa_pc_gatevr_mobile\\GateVR\\GateVR.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\UnrealEngine"
+				}
+			},
+			{
+				"label": "GateVRClient Win64 Test Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"GateVRClient",
+					"Win64",
+					"Test",
+					"C:\\Users\\Dragon Tesa\\spider.w\\teamgate\\GateVR\\__src\\dragontesa_pc_gatevr_mobile\\GateVR\\GateVR.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"GateVRClient Win64 Test Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\UnrealEngine"
+				}
+			},
+			{
+				"label": "GateVRClient Win64 Test Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"GateVRClient",
+					"Win64",
+					"Test",
+					"C:\\Users\\Dragon Tesa\\spider.w\\teamgate\\GateVR\\__src\\dragontesa_pc_gatevr_mobile\\GateVR\\GateVR.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\UnrealEngine"
+				}
+			},
+			{
+				"label": "GateVRClient Win64 Shipping Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"GateVRClient",
+					"Win64",
+					"Shipping",
+					"C:\\Users\\Dragon Tesa\\spider.w\\teamgate\\GateVR\\__src\\dragontesa_pc_gatevr_mobile\\GateVR\\GateVR.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\UnrealEngine"
+				}
+			},
+			{
+				"label": "GateVRClient Win64 Shipping Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"GateVRClient",
+					"Win64",
+					"Shipping",
+					"C:\\Users\\Dragon Tesa\\spider.w\\teamgate\\GateVR\\__src\\dragontesa_pc_gatevr_mobile\\GateVR\\GateVR.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"GateVRClient Win64 Shipping Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\UnrealEngine"
+				}
+			},
+			{
+				"label": "GateVRClient Win64 Shipping Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"GateVRClient",
+					"Win64",
+					"Shipping",
+					"C:\\Users\\Dragon Tesa\\spider.w\\teamgate\\GateVR\\__src\\dragontesa_pc_gatevr_mobile\\GateVR\\GateVR.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\UnrealEngine"
+				}
+			},
+			{
+				"label": "GateVRClient Android Debug Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"GateVRClient",
+					"Android",
+					"Debug",
+					"C:\\Users\\Dragon Tesa\\spider.w\\teamgate\\GateVR\\__src\\dragontesa_pc_gatevr_mobile\\GateVR\\GateVR.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\UnrealEngine"
+				}
+			},
+			{
+				"label": "GateVRClient Android Debug Cook+Deploy",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\RunUAT.bat",
+				"args": [
+					"BuildCookRun",
+					"-ScriptsForProject=C:/Users/Dragon Tesa/spider.w/teamgate/GateVR/__src/dragontesa_pc_gatevr_mobile/GateVR/GateVR.uproject",
+					"-Project=C:/Users/Dragon Tesa/spider.w/teamgate/GateVR/__src/dragontesa_pc_gatevr_mobile/GateVR/GateVR.uproject",
+					"-noP4",
+					"-ClientConfig=Debug",
+					"-ServerConfig=Debug",
+					"-NoCompileEditor",
+					"-utf8output",
+					"-Platform=Android",
+					"-TargetPlatform=Android",
+					"-ini:Game:[/Script/UnrealEd.ProjectPackagingSettings]:BlueprintNativizationMethod=Disabled",
+					"-Compressed",
+					"-IterativeCooking",
+					"-IterativeDeploy",
+					"-Cook",
+					"-Stage",
+					"-Deploy"
+				],
+				"dependsOn": [
+					"GateVRClientEditor Win64 Development Build",
+					"GateVRClient Android Debug Build"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\UnrealEngine"
+				}
+			},
+			{
+				"label": "GateVRClient Android Debug Cook",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\RunUAT.bat",
+				"args": [
+					"BuildCookRun",
+					"-ScriptsForProject=C:/Users/Dragon Tesa/spider.w/teamgate/GateVR/__src/dragontesa_pc_gatevr_mobile/GateVR/GateVR.uproject",
+					"-Project=C:/Users/Dragon Tesa/spider.w/teamgate/GateVR/__src/dragontesa_pc_gatevr_mobile/GateVR/GateVR.uproject",
+					"-noP4",
+					"-ClientConfig=Debug",
+					"-ServerConfig=Debug",
+					"-NoCompileEditor",
+					"-utf8output",
+					"-Platform=Android",
+					"-TargetPlatform=Android",
+					"-ini:Game:[/Script/UnrealEd.ProjectPackagingSettings]:BlueprintNativizationMethod=Disabled",
+					"-Compressed",
+					"-IterativeCooking",
+					"-IterativeDeploy",
+					"-Cook"
+				],
+				"dependsOn": [
+					"GateVRClientEditor Win64 Development Build",
+					"GateVRClient Android Debug Build"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\UnrealEngine"
+				}
+			},
+			{
+				"label": "GateVRClient Android Debug Deploy",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\RunUAT.bat",
+				"args": [
+					"BuildCookRun",
+					"-ScriptsForProject=C:/Users/Dragon Tesa/spider.w/teamgate/GateVR/__src/dragontesa_pc_gatevr_mobile/GateVR/GateVR.uproject",
+					"-Project=C:/Users/Dragon Tesa/spider.w/teamgate/GateVR/__src/dragontesa_pc_gatevr_mobile/GateVR/GateVR.uproject",
+					"-noP4",
+					"-ClientConfig=Debug",
+					"-ServerConfig=Debug",
+					"-NoCompileEditor",
+					"-utf8output",
+					"-Platform=Android",
+					"-TargetPlatform=Android",
+					"-ini:Game:[/Script/UnrealEd.ProjectPackagingSettings]:BlueprintNativizationMethod=Disabled",
+					"-Compressed",
+					"-IterativeCooking",
+					"-IterativeDeploy",
+					"-DeploySoToDevice",
+					"-SkipCook",
+					"-Stage",
+					"-Deploy"
+				],
+				"dependsOn": [
+					"GateVRClient Android Debug Build"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\UnrealEngine"
+				}
+			},
+			{
+				"label": "GateVRClient Android Debug Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"GateVRClient",
+					"Android",
+					"Debug",
+					"C:\\Users\\Dragon Tesa\\spider.w\\teamgate\\GateVR\\__src\\dragontesa_pc_gatevr_mobile\\GateVR\\GateVR.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"GateVRClient Android Debug Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\UnrealEngine"
+				}
+			},
+			{
+				"label": "GateVRClient Android Debug Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"GateVRClient",
+					"Android",
+					"Debug",
+					"C:\\Users\\Dragon Tesa\\spider.w\\teamgate\\GateVR\\__src\\dragontesa_pc_gatevr_mobile\\GateVR\\GateVR.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\UnrealEngine"
+				}
+			},
+			{
+				"label": "GateVRClient Android DebugGame Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"GateVRClient",
+					"Android",
+					"DebugGame",
+					"C:\\Users\\Dragon Tesa\\spider.w\\teamgate\\GateVR\\__src\\dragontesa_pc_gatevr_mobile\\GateVR\\GateVR.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\UnrealEngine"
+				}
+			},
+			{
+				"label": "GateVRClient Android DebugGame Cook+Deploy",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\RunUAT.bat",
+				"args": [
+					"BuildCookRun",
+					"-ScriptsForProject=C:/Users/Dragon Tesa/spider.w/teamgate/GateVR/__src/dragontesa_pc_gatevr_mobile/GateVR/GateVR.uproject",
+					"-Project=C:/Users/Dragon Tesa/spider.w/teamgate/GateVR/__src/dragontesa_pc_gatevr_mobile/GateVR/GateVR.uproject",
+					"-noP4",
+					"-ClientConfig=DebugGame",
+					"-ServerConfig=DebugGame",
+					"-NoCompileEditor",
+					"-utf8output",
+					"-Platform=Android",
+					"-TargetPlatform=Android",
+					"-ini:Game:[/Script/UnrealEd.ProjectPackagingSettings]:BlueprintNativizationMethod=Disabled",
+					"-Compressed",
+					"-IterativeCooking",
+					"-IterativeDeploy",
+					"-Cook",
+					"-Stage",
+					"-Deploy"
+				],
+				"dependsOn": [
+					"GateVRClientEditor Win64 Development Build",
+					"GateVRClient Android DebugGame Build"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\UnrealEngine"
+				}
+			},
+			{
+				"label": "GateVRClient Android DebugGame Cook",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\RunUAT.bat",
+				"args": [
+					"BuildCookRun",
+					"-ScriptsForProject=C:/Users/Dragon Tesa/spider.w/teamgate/GateVR/__src/dragontesa_pc_gatevr_mobile/GateVR/GateVR.uproject",
+					"-Project=C:/Users/Dragon Tesa/spider.w/teamgate/GateVR/__src/dragontesa_pc_gatevr_mobile/GateVR/GateVR.uproject",
+					"-noP4",
+					"-ClientConfig=DebugGame",
+					"-ServerConfig=DebugGame",
+					"-NoCompileEditor",
+					"-utf8output",
+					"-Platform=Android",
+					"-TargetPlatform=Android",
+					"-ini:Game:[/Script/UnrealEd.ProjectPackagingSettings]:BlueprintNativizationMethod=Disabled",
+					"-Compressed",
+					"-IterativeCooking",
+					"-IterativeDeploy",
+					"-Cook"
+				],
+				"dependsOn": [
+					"GateVRClientEditor Win64 Development Build",
+					"GateVRClient Android DebugGame Build"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\UnrealEngine"
+				}
+			},
+			{
+				"label": "GateVRClient Android DebugGame Deploy",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\RunUAT.bat",
+				"args": [
+					"BuildCookRun",
+					"-ScriptsForProject=C:/Users/Dragon Tesa/spider.w/teamgate/GateVR/__src/dragontesa_pc_gatevr_mobile/GateVR/GateVR.uproject",
+					"-Project=C:/Users/Dragon Tesa/spider.w/teamgate/GateVR/__src/dragontesa_pc_gatevr_mobile/GateVR/GateVR.uproject",
+					"-noP4",
+					"-ClientConfig=DebugGame",
+					"-ServerConfig=DebugGame",
+					"-NoCompileEditor",
+					"-utf8output",
+					"-Platform=Android",
+					"-TargetPlatform=Android",
+					"-ini:Game:[/Script/UnrealEd.ProjectPackagingSettings]:BlueprintNativizationMethod=Disabled",
+					"-Compressed",
+					"-IterativeCooking",
+					"-IterativeDeploy",
+					"-DeploySoToDevice",
+					"-SkipCook",
+					"-Stage",
+					"-Deploy"
+				],
+				"dependsOn": [
+					"GateVRClient Android DebugGame Build"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\UnrealEngine"
+				}
+			},
+			{
+				"label": "GateVRClient Android DebugGame Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"GateVRClient",
+					"Android",
+					"DebugGame",
+					"C:\\Users\\Dragon Tesa\\spider.w\\teamgate\\GateVR\\__src\\dragontesa_pc_gatevr_mobile\\GateVR\\GateVR.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"GateVRClient Android DebugGame Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\UnrealEngine"
+				}
+			},
+			{
+				"label": "GateVRClient Android DebugGame Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"GateVRClient",
+					"Android",
+					"DebugGame",
+					"C:\\Users\\Dragon Tesa\\spider.w\\teamgate\\GateVR\\__src\\dragontesa_pc_gatevr_mobile\\GateVR\\GateVR.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\UnrealEngine"
+				}
+			},
+			{
+				"label": "GateVRClient Android Development Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"GateVRClient",
+					"Android",
+					"Development",
+					"C:\\Users\\Dragon Tesa\\spider.w\\teamgate\\GateVR\\__src\\dragontesa_pc_gatevr_mobile\\GateVR\\GateVR.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\UnrealEngine"
+				}
+			},
+			{
+				"label": "GateVRClient Android Development Cook+Deploy",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\RunUAT.bat",
+				"args": [
+					"BuildCookRun",
+					"-ScriptsForProject=C:/Users/Dragon Tesa/spider.w/teamgate/GateVR/__src/dragontesa_pc_gatevr_mobile/GateVR/GateVR.uproject",
+					"-Project=C:/Users/Dragon Tesa/spider.w/teamgate/GateVR/__src/dragontesa_pc_gatevr_mobile/GateVR/GateVR.uproject",
+					"-noP4",
+					"-ClientConfig=Development",
+					"-ServerConfig=Development",
+					"-NoCompileEditor",
+					"-utf8output",
+					"-Platform=Android",
+					"-TargetPlatform=Android",
+					"-ini:Game:[/Script/UnrealEd.ProjectPackagingSettings]:BlueprintNativizationMethod=Disabled",
+					"-Compressed",
+					"-IterativeCooking",
+					"-IterativeDeploy",
+					"-Cook",
+					"-Stage",
+					"-Deploy"
+				],
+				"dependsOn": [
+					"GateVRClientEditor Win64 Development Build",
+					"GateVRClient Android Development Build"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\UnrealEngine"
+				}
+			},
+			{
+				"label": "GateVRClient Android Development Cook",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\RunUAT.bat",
+				"args": [
+					"BuildCookRun",
+					"-ScriptsForProject=C:/Users/Dragon Tesa/spider.w/teamgate/GateVR/__src/dragontesa_pc_gatevr_mobile/GateVR/GateVR.uproject",
+					"-Project=C:/Users/Dragon Tesa/spider.w/teamgate/GateVR/__src/dragontesa_pc_gatevr_mobile/GateVR/GateVR.uproject",
+					"-noP4",
+					"-ClientConfig=Development",
+					"-ServerConfig=Development",
+					"-NoCompileEditor",
+					"-utf8output",
+					"-Platform=Android",
+					"-TargetPlatform=Android",
+					"-ini:Game:[/Script/UnrealEd.ProjectPackagingSettings]:BlueprintNativizationMethod=Disabled",
+					"-Compressed",
+					"-IterativeCooking",
+					"-IterativeDeploy",
+					"-Cook"
+				],
+				"dependsOn": [
+					"GateVRClientEditor Win64 Development Build",
+					"GateVRClient Android Development Build"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\UnrealEngine"
+				}
+			},
+			{
+				"label": "GateVRClient Android Development Deploy",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\RunUAT.bat",
+				"args": [
+					"BuildCookRun",
+					"-ScriptsForProject=C:/Users/Dragon Tesa/spider.w/teamgate/GateVR/__src/dragontesa_pc_gatevr_mobile/GateVR/GateVR.uproject",
+					"-Project=C:/Users/Dragon Tesa/spider.w/teamgate/GateVR/__src/dragontesa_pc_gatevr_mobile/GateVR/GateVR.uproject",
+					"-noP4",
+					"-ClientConfig=Development",
+					"-ServerConfig=Development",
+					"-NoCompileEditor",
+					"-utf8output",
+					"-Platform=Android",
+					"-TargetPlatform=Android",
+					"-ini:Game:[/Script/UnrealEd.ProjectPackagingSettings]:BlueprintNativizationMethod=Disabled",
+					"-Compressed",
+					"-IterativeCooking",
+					"-IterativeDeploy",
+					"-DeploySoToDevice",
+					"-SkipCook",
+					"-Stage",
+					"-Deploy"
+				],
+				"dependsOn": [
+					"GateVRClient Android Development Build"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\UnrealEngine"
+				}
+			},
+			{
+				"label": "GateVRClient Android Development Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"GateVRClient",
+					"Android",
+					"Development",
+					"C:\\Users\\Dragon Tesa\\spider.w\\teamgate\\GateVR\\__src\\dragontesa_pc_gatevr_mobile\\GateVR\\GateVR.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"GateVRClient Android Development Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\UnrealEngine"
+				}
+			},
+			{
+				"label": "GateVRClient Android Development Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"GateVRClient",
+					"Android",
+					"Development",
+					"C:\\Users\\Dragon Tesa\\spider.w\\teamgate\\GateVR\\__src\\dragontesa_pc_gatevr_mobile\\GateVR\\GateVR.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\UnrealEngine"
+				}
+			},
+			{
+				"label": "GateVRClient Android Test Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"GateVRClient",
+					"Android",
+					"Test",
+					"C:\\Users\\Dragon Tesa\\spider.w\\teamgate\\GateVR\\__src\\dragontesa_pc_gatevr_mobile\\GateVR\\GateVR.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\UnrealEngine"
+				}
+			},
+			{
+				"label": "GateVRClient Android Test Cook+Deploy",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\RunUAT.bat",
+				"args": [
+					"BuildCookRun",
+					"-ScriptsForProject=C:/Users/Dragon Tesa/spider.w/teamgate/GateVR/__src/dragontesa_pc_gatevr_mobile/GateVR/GateVR.uproject",
+					"-Project=C:/Users/Dragon Tesa/spider.w/teamgate/GateVR/__src/dragontesa_pc_gatevr_mobile/GateVR/GateVR.uproject",
+					"-noP4",
+					"-ClientConfig=Test",
+					"-ServerConfig=Test",
+					"-NoCompileEditor",
+					"-utf8output",
+					"-Platform=Android",
+					"-TargetPlatform=Android",
+					"-ini:Game:[/Script/UnrealEd.ProjectPackagingSettings]:BlueprintNativizationMethod=Disabled",
+					"-Compressed",
+					"-IterativeCooking",
+					"-IterativeDeploy",
+					"-Cook",
+					"-Stage",
+					"-Deploy"
+				],
+				"dependsOn": [
+					"GateVRClientEditor Win64 Development Build",
+					"GateVRClient Android Test Build"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\UnrealEngine"
+				}
+			},
+			{
+				"label": "GateVRClient Android Test Cook",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\RunUAT.bat",
+				"args": [
+					"BuildCookRun",
+					"-ScriptsForProject=C:/Users/Dragon Tesa/spider.w/teamgate/GateVR/__src/dragontesa_pc_gatevr_mobile/GateVR/GateVR.uproject",
+					"-Project=C:/Users/Dragon Tesa/spider.w/teamgate/GateVR/__src/dragontesa_pc_gatevr_mobile/GateVR/GateVR.uproject",
+					"-noP4",
+					"-ClientConfig=Test",
+					"-ServerConfig=Test",
+					"-NoCompileEditor",
+					"-utf8output",
+					"-Platform=Android",
+					"-TargetPlatform=Android",
+					"-ini:Game:[/Script/UnrealEd.ProjectPackagingSettings]:BlueprintNativizationMethod=Disabled",
+					"-Compressed",
+					"-IterativeCooking",
+					"-IterativeDeploy",
+					"-Cook"
+				],
+				"dependsOn": [
+					"GateVRClientEditor Win64 Development Build",
+					"GateVRClient Android Test Build"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\UnrealEngine"
+				}
+			},
+			{
+				"label": "GateVRClient Android Test Deploy",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\RunUAT.bat",
+				"args": [
+					"BuildCookRun",
+					"-ScriptsForProject=C:/Users/Dragon Tesa/spider.w/teamgate/GateVR/__src/dragontesa_pc_gatevr_mobile/GateVR/GateVR.uproject",
+					"-Project=C:/Users/Dragon Tesa/spider.w/teamgate/GateVR/__src/dragontesa_pc_gatevr_mobile/GateVR/GateVR.uproject",
+					"-noP4",
+					"-ClientConfig=Test",
+					"-ServerConfig=Test",
+					"-NoCompileEditor",
+					"-utf8output",
+					"-Platform=Android",
+					"-TargetPlatform=Android",
+					"-ini:Game:[/Script/UnrealEd.ProjectPackagingSettings]:BlueprintNativizationMethod=Disabled",
+					"-Compressed",
+					"-IterativeCooking",
+					"-IterativeDeploy",
+					"-DeploySoToDevice",
+					"-SkipCook",
+					"-Stage",
+					"-Deploy"
+				],
+				"dependsOn": [
+					"GateVRClient Android Test Build"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\UnrealEngine"
+				}
+			},
+			{
+				"label": "GateVRClient Android Test Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"GateVRClient",
+					"Android",
+					"Test",
+					"C:\\Users\\Dragon Tesa\\spider.w\\teamgate\\GateVR\\__src\\dragontesa_pc_gatevr_mobile\\GateVR\\GateVR.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"GateVRClient Android Test Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\UnrealEngine"
+				}
+			},
+			{
+				"label": "GateVRClient Android Test Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"GateVRClient",
+					"Android",
+					"Test",
+					"C:\\Users\\Dragon Tesa\\spider.w\\teamgate\\GateVR\\__src\\dragontesa_pc_gatevr_mobile\\GateVR\\GateVR.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\UnrealEngine"
+				}
+			},
+			{
+				"label": "GateVRClient Android Shipping Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"GateVRClient",
+					"Android",
+					"Shipping",
+					"C:\\Users\\Dragon Tesa\\spider.w\\teamgate\\GateVR\\__src\\dragontesa_pc_gatevr_mobile\\GateVR\\GateVR.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\UnrealEngine"
+				}
+			},
+			{
+				"label": "GateVRClient Android Shipping Cook+Deploy",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\RunUAT.bat",
+				"args": [
+					"BuildCookRun",
+					"-ScriptsForProject=C:/Users/Dragon Tesa/spider.w/teamgate/GateVR/__src/dragontesa_pc_gatevr_mobile/GateVR/GateVR.uproject",
+					"-Project=C:/Users/Dragon Tesa/spider.w/teamgate/GateVR/__src/dragontesa_pc_gatevr_mobile/GateVR/GateVR.uproject",
+					"-noP4",
+					"-ClientConfig=Shipping",
+					"-ServerConfig=Shipping",
+					"-NoCompileEditor",
+					"-utf8output",
+					"-Platform=Android",
+					"-TargetPlatform=Android",
+					"-ini:Game:[/Script/UnrealEd.ProjectPackagingSettings]:BlueprintNativizationMethod=Disabled",
+					"-Compressed",
+					"-IterativeCooking",
+					"-IterativeDeploy",
+					"-Cook",
+					"-Stage",
+					"-Deploy"
+				],
+				"dependsOn": [
+					"GateVRClientEditor Win64 Development Build",
+					"GateVRClient Android Shipping Build"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\UnrealEngine"
+				}
+			},
+			{
+				"label": "GateVRClient Android Shipping Cook",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\RunUAT.bat",
+				"args": [
+					"BuildCookRun",
+					"-ScriptsForProject=C:/Users/Dragon Tesa/spider.w/teamgate/GateVR/__src/dragontesa_pc_gatevr_mobile/GateVR/GateVR.uproject",
+					"-Project=C:/Users/Dragon Tesa/spider.w/teamgate/GateVR/__src/dragontesa_pc_gatevr_mobile/GateVR/GateVR.uproject",
+					"-noP4",
+					"-ClientConfig=Shipping",
+					"-ServerConfig=Shipping",
+					"-NoCompileEditor",
+					"-utf8output",
+					"-Platform=Android",
+					"-TargetPlatform=Android",
+					"-ini:Game:[/Script/UnrealEd.ProjectPackagingSettings]:BlueprintNativizationMethod=Disabled",
+					"-Compressed",
+					"-IterativeCooking",
+					"-IterativeDeploy",
+					"-Cook"
+				],
+				"dependsOn": [
+					"GateVRClientEditor Win64 Development Build",
+					"GateVRClient Android Shipping Build"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\UnrealEngine"
+				}
+			},
+			{
+				"label": "GateVRClient Android Shipping Deploy",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\RunUAT.bat",
+				"args": [
+					"BuildCookRun",
+					"-ScriptsForProject=C:/Users/Dragon Tesa/spider.w/teamgate/GateVR/__src/dragontesa_pc_gatevr_mobile/GateVR/GateVR.uproject",
+					"-Project=C:/Users/Dragon Tesa/spider.w/teamgate/GateVR/__src/dragontesa_pc_gatevr_mobile/GateVR/GateVR.uproject",
+					"-noP4",
+					"-ClientConfig=Shipping",
+					"-ServerConfig=Shipping",
+					"-NoCompileEditor",
+					"-utf8output",
+					"-Platform=Android",
+					"-TargetPlatform=Android",
+					"-ini:Game:[/Script/UnrealEd.ProjectPackagingSettings]:BlueprintNativizationMethod=Disabled",
+					"-Compressed",
+					"-IterativeCooking",
+					"-IterativeDeploy",
+					"-DeploySoToDevice",
+					"-SkipCook",
+					"-Stage",
+					"-Deploy"
+				],
+				"dependsOn": [
+					"GateVRClient Android Shipping Build"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\UnrealEngine"
+				}
+			},
+			{
+				"label": "GateVRClient Android Shipping Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"GateVRClient",
+					"Android",
+					"Shipping",
+					"C:\\Users\\Dragon Tesa\\spider.w\\teamgate\\GateVR\\__src\\dragontesa_pc_gatevr_mobile\\GateVR\\GateVR.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"GateVRClient Android Shipping Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\UnrealEngine"
+				}
+			},
+			{
+				"label": "GateVRClient Android Shipping Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"GateVRClient",
+					"Android",
+					"Shipping",
+					"C:\\Users\\Dragon Tesa\\spider.w\\teamgate\\GateVR\\__src\\dragontesa_pc_gatevr_mobile\\GateVR\\GateVR.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\UnrealEngine"
+				}
+			},
+			{
+				"label": "GateVREditor Win64 Debug Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"GateVREditor",
+					"Win64",
+					"Debug",
+					"C:\\Users\\Dragon Tesa\\spider.w\\teamgate\\GateVR\\__src\\dragontesa_pc_gatevr_mobile\\GateVR\\GateVR.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\UnrealEngine"
+				}
+			},
+			{
+				"label": "GateVREditor Win64 Debug Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"GateVREditor",
+					"Win64",
+					"Debug",
+					"C:\\Users\\Dragon Tesa\\spider.w\\teamgate\\GateVR\\__src\\dragontesa_pc_gatevr_mobile\\GateVR\\GateVR.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"GateVREditor Win64 Debug Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\UnrealEngine"
+				}
+			},
+			{
+				"label": "GateVREditor Win64 Debug Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"GateVREditor",
+					"Win64",
+					"Debug",
+					"C:\\Users\\Dragon Tesa\\spider.w\\teamgate\\GateVR\\__src\\dragontesa_pc_gatevr_mobile\\GateVR\\GateVR.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\UnrealEngine"
+				}
+			},
+			{
+				"label": "GateVREditor Win64 DebugGame Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"GateVREditor",
+					"Win64",
+					"DebugGame",
+					"C:\\Users\\Dragon Tesa\\spider.w\\teamgate\\GateVR\\__src\\dragontesa_pc_gatevr_mobile\\GateVR\\GateVR.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\UnrealEngine"
+				}
+			},
+			{
+				"label": "GateVREditor Win64 DebugGame Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"GateVREditor",
+					"Win64",
+					"DebugGame",
+					"C:\\Users\\Dragon Tesa\\spider.w\\teamgate\\GateVR\\__src\\dragontesa_pc_gatevr_mobile\\GateVR\\GateVR.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"GateVREditor Win64 DebugGame Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\UnrealEngine"
+				}
+			},
+			{
+				"label": "GateVREditor Win64 DebugGame Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"GateVREditor",
+					"Win64",
+					"DebugGame",
+					"C:\\Users\\Dragon Tesa\\spider.w\\teamgate\\GateVR\\__src\\dragontesa_pc_gatevr_mobile\\GateVR\\GateVR.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\UnrealEngine"
+				}
+			},
+			{
+				"label": "GateVREditor Win64 Development Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"GateVREditor",
+					"Win64",
+					"Development",
+					"C:\\Users\\Dragon Tesa\\spider.w\\teamgate\\GateVR\\__src\\dragontesa_pc_gatevr_mobile\\GateVR\\GateVR.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\UnrealEngine"
+				}
+			},
+			{
+				"label": "GateVREditor Win64 Development Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"GateVREditor",
+					"Win64",
+					"Development",
+					"C:\\Users\\Dragon Tesa\\spider.w\\teamgate\\GateVR\\__src\\dragontesa_pc_gatevr_mobile\\GateVR\\GateVR.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"GateVREditor Win64 Development Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\UnrealEngine"
+				}
+			},
+			{
+				"label": "GateVREditor Win64 Development Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"GateVREditor",
+					"Win64",
+					"Development",
+					"C:\\Users\\Dragon Tesa\\spider.w\\teamgate\\GateVR\\__src\\dragontesa_pc_gatevr_mobile\\GateVR\\GateVR.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\UnrealEngine"
+				}
+			},
+			{
+				"label": "GateVRServer Win64 Debug Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"GateVRServer",
+					"Win64",
+					"Debug",
+					"C:\\Users\\Dragon Tesa\\spider.w\\teamgate\\GateVR\\__src\\dragontesa_pc_gatevr_mobile\\GateVR\\GateVR.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\UnrealEngine"
+				}
+			},
+			{
+				"label": "GateVRServer Win64 Debug Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"GateVRServer",
+					"Win64",
+					"Debug",
+					"C:\\Users\\Dragon Tesa\\spider.w\\teamgate\\GateVR\\__src\\dragontesa_pc_gatevr_mobile\\GateVR\\GateVR.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"GateVRServer Win64 Debug Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\UnrealEngine"
+				}
+			},
+			{
+				"label": "GateVRServer Win64 Debug Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"GateVRServer",
+					"Win64",
+					"Debug",
+					"C:\\Users\\Dragon Tesa\\spider.w\\teamgate\\GateVR\\__src\\dragontesa_pc_gatevr_mobile\\GateVR\\GateVR.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\UnrealEngine"
+				}
+			},
+			{
+				"label": "GateVRServer Win64 DebugGame Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"GateVRServer",
+					"Win64",
+					"DebugGame",
+					"C:\\Users\\Dragon Tesa\\spider.w\\teamgate\\GateVR\\__src\\dragontesa_pc_gatevr_mobile\\GateVR\\GateVR.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\UnrealEngine"
+				}
+			},
+			{
+				"label": "GateVRServer Win64 DebugGame Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"GateVRServer",
+					"Win64",
+					"DebugGame",
+					"C:\\Users\\Dragon Tesa\\spider.w\\teamgate\\GateVR\\__src\\dragontesa_pc_gatevr_mobile\\GateVR\\GateVR.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"GateVRServer Win64 DebugGame Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\UnrealEngine"
+				}
+			},
+			{
+				"label": "GateVRServer Win64 DebugGame Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"GateVRServer",
+					"Win64",
+					"DebugGame",
+					"C:\\Users\\Dragon Tesa\\spider.w\\teamgate\\GateVR\\__src\\dragontesa_pc_gatevr_mobile\\GateVR\\GateVR.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\UnrealEngine"
+				}
+			},
+			{
+				"label": "GateVRServer Win64 Development Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"GateVRServer",
+					"Win64",
+					"Development",
+					"C:\\Users\\Dragon Tesa\\spider.w\\teamgate\\GateVR\\__src\\dragontesa_pc_gatevr_mobile\\GateVR\\GateVR.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\UnrealEngine"
+				}
+			},
+			{
+				"label": "GateVRServer Win64 Development Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"GateVRServer",
+					"Win64",
+					"Development",
+					"C:\\Users\\Dragon Tesa\\spider.w\\teamgate\\GateVR\\__src\\dragontesa_pc_gatevr_mobile\\GateVR\\GateVR.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"GateVRServer Win64 Development Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\UnrealEngine"
+				}
+			},
+			{
+				"label": "GateVRServer Win64 Development Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"GateVRServer",
+					"Win64",
+					"Development",
+					"C:\\Users\\Dragon Tesa\\spider.w\\teamgate\\GateVR\\__src\\dragontesa_pc_gatevr_mobile\\GateVR\\GateVR.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\UnrealEngine"
+				}
+			},
+			{
+				"label": "GateVRServer Win64 Test Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"GateVRServer",
+					"Win64",
+					"Test",
+					"C:\\Users\\Dragon Tesa\\spider.w\\teamgate\\GateVR\\__src\\dragontesa_pc_gatevr_mobile\\GateVR\\GateVR.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\UnrealEngine"
+				}
+			},
+			{
+				"label": "GateVRServer Win64 Test Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"GateVRServer",
+					"Win64",
+					"Test",
+					"C:\\Users\\Dragon Tesa\\spider.w\\teamgate\\GateVR\\__src\\dragontesa_pc_gatevr_mobile\\GateVR\\GateVR.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"GateVRServer Win64 Test Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\UnrealEngine"
+				}
+			},
+			{
+				"label": "GateVRServer Win64 Test Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"GateVRServer",
+					"Win64",
+					"Test",
+					"C:\\Users\\Dragon Tesa\\spider.w\\teamgate\\GateVR\\__src\\dragontesa_pc_gatevr_mobile\\GateVR\\GateVR.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\UnrealEngine"
+				}
+			},
+			{
+				"label": "GateVRServer Win64 Shipping Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"GateVRServer",
+					"Win64",
+					"Shipping",
+					"C:\\Users\\Dragon Tesa\\spider.w\\teamgate\\GateVR\\__src\\dragontesa_pc_gatevr_mobile\\GateVR\\GateVR.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\UnrealEngine"
+				}
+			},
+			{
+				"label": "GateVRServer Win64 Shipping Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"GateVRServer",
+					"Win64",
+					"Shipping",
+					"C:\\Users\\Dragon Tesa\\spider.w\\teamgate\\GateVR\\__src\\dragontesa_pc_gatevr_mobile\\GateVR\\GateVR.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"GateVRServer Win64 Shipping Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\UnrealEngine"
+				}
+			},
+			{
+				"label": "GateVRServer Win64 Shipping Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"GateVRServer",
+					"Win64",
+					"Shipping",
+					"C:\\Users\\Dragon Tesa\\spider.w\\teamgate\\GateVR\\__src\\dragontesa_pc_gatevr_mobile\\GateVR\\GateVR.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\UnrealEngine"
+				}
+			}
+		]
+	},
+	"launch": {
+		"version": "0.2.0",
+		"configurations": [
+			{
+				"name": "Launch GateVR (Debug)",
+				"request": "launch",
+				"program": "C:\\Users\\Dragon Tesa\\spider.w\\teamgate\\GateVR\\__src\\dragontesa_pc_gatevr_mobile\\GateVR\\Binaries\\Win64\\GateVR-Win64-Debug.exe",
+				"preLaunchTask": "GateVR Win64 Debug Build",
+				"args": [
+				],
+				"cwd": "C:\\UnrealEngine",
+				"stopAtEntry": false,
+				"console": "externalTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "C:\\UnrealEngine\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis"
+			},
+			{
+				"name": "Launch GateVR (DebugGame)",
+				"request": "launch",
+				"program": "C:\\Users\\Dragon Tesa\\spider.w\\teamgate\\GateVR\\__src\\dragontesa_pc_gatevr_mobile\\GateVR\\Binaries\\Win64\\GateVR-Win64-DebugGame.exe",
+				"preLaunchTask": "GateVR Win64 DebugGame Build",
+				"args": [
+				],
+				"cwd": "C:\\UnrealEngine",
+				"stopAtEntry": false,
+				"console": "externalTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "C:\\UnrealEngine\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis"
+			},
+			{
+				"name": "Launch GateVR (Development)",
+				"request": "launch",
+				"program": "C:\\Users\\Dragon Tesa\\spider.w\\teamgate\\GateVR\\__src\\dragontesa_pc_gatevr_mobile\\GateVR\\Binaries\\Win64\\GateVR.exe",
+				"preLaunchTask": "GateVR Win64 Development Build",
+				"args": [
+				],
+				"cwd": "C:\\UnrealEngine",
+				"stopAtEntry": false,
+				"console": "externalTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "C:\\UnrealEngine\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis"
+			},
+			{
+				"name": "Launch GateVR (Test)",
+				"request": "launch",
+				"program": "C:\\Users\\Dragon Tesa\\spider.w\\teamgate\\GateVR\\__src\\dragontesa_pc_gatevr_mobile\\GateVR\\Binaries\\Win64\\GateVR-Win64-Test.exe",
+				"preLaunchTask": "GateVR Win64 Test Build",
+				"args": [
+				],
+				"cwd": "C:\\UnrealEngine",
+				"stopAtEntry": false,
+				"console": "externalTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "C:\\UnrealEngine\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis"
+			},
+			{
+				"name": "Launch GateVR (Shipping)",
+				"request": "launch",
+				"program": "C:\\Users\\Dragon Tesa\\spider.w\\teamgate\\GateVR\\__src\\dragontesa_pc_gatevr_mobile\\GateVR\\Binaries\\Win64\\GateVR-Win64-Shipping.exe",
+				"preLaunchTask": "GateVR Win64 Shipping Build",
+				"args": [
+				],
+				"cwd": "C:\\UnrealEngine",
+				"stopAtEntry": false,
+				"console": "externalTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "C:\\UnrealEngine\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis"
+			},
+			{
+				"name": "GateVR Oculus (Debug) Launch",
+				"request": "launch",
+				"preLaunchTask": "GateVR Android Debug Deploy",
+				"type": "fb-lldb",
+				"android": {
+					"application": {
+						"package": "com.epicgames.GateVR",
+						"activity": "com.epicgames.unreal.GameActivity"
+					},
+					"lldbConfig": {
+						"librarySearchPaths": [
+							"\\\"C:/Users/Dragon Tesa/spider.w/teamgate/GateVR/__src/dragontesa_pc_gatevr_mobile/GateVR/Binaries/Android/GateVR_Symbols_v1/GateVR-arm64\\\""
+						],
+						"lldbPreTargetCreateCommands": [
+							"command script import \\\"C:/UnrealEngine/Engine/Extras/LLDBDataFormatters/UEDataFormatters_2ByteChars.py\\\""
+						],
+						"lldbPostTargetCreateCommands": [
+							"process handle --pass true --stop false --notify true SIGILL"
+						]
+					}
+				}
+			},
+			{
+				"name": "GateVR Oculus (DebugGame) Launch",
+				"request": "launch",
+				"preLaunchTask": "GateVR Android DebugGame Deploy",
+				"type": "fb-lldb",
+				"android": {
+					"application": {
+						"package": "com.epicgames.GateVR",
+						"activity": "com.epicgames.unreal.GameActivity"
+					},
+					"lldbConfig": {
+						"librarySearchPaths": [
+							"\\\"C:/Users/Dragon Tesa/spider.w/teamgate/GateVR/__src/dragontesa_pc_gatevr_mobile/GateVR/Binaries/Android/GateVR_Symbols_v1/GateVR-arm64\\\""
+						],
+						"lldbPreTargetCreateCommands": [
+							"command script import \\\"C:/UnrealEngine/Engine/Extras/LLDBDataFormatters/UEDataFormatters_2ByteChars.py\\\""
+						],
+						"lldbPostTargetCreateCommands": [
+							"process handle --pass true --stop false --notify true SIGILL"
+						]
+					}
+				}
+			},
+			{
+				"name": "GateVR Oculus (Development) Launch",
+				"request": "launch",
+				"preLaunchTask": "GateVR Android Development Deploy",
+				"type": "fb-lldb",
+				"android": {
+					"application": {
+						"package": "com.epicgames.GateVR",
+						"activity": "com.epicgames.unreal.GameActivity"
+					},
+					"lldbConfig": {
+						"librarySearchPaths": [
+							"\\\"C:/Users/Dragon Tesa/spider.w/teamgate/GateVR/__src/dragontesa_pc_gatevr_mobile/GateVR/Binaries/Android/GateVR_Symbols_v1/GateVR-arm64\\\""
+						],
+						"lldbPreTargetCreateCommands": [
+							"command script import \\\"C:/UnrealEngine/Engine/Extras/LLDBDataFormatters/UEDataFormatters_2ByteChars.py\\\""
+						],
+						"lldbPostTargetCreateCommands": [
+							"process handle --pass true --stop false --notify true SIGILL"
+						]
+					}
+				}
+			},
+			{
+				"name": "GateVR Oculus (Development) Attach",
+				"request": "attach",
+				"type": "fb-lldb",
+				"android": {
+					"application": {
+						"package": "com.epicgames.GateVR",
+						"activity": "com.epicgames.unreal.GameActivity"
+					},
+					"lldbConfig": {
+						"librarySearchPaths": [
+							"\\\"C:/Users/Dragon Tesa/spider.w/teamgate/GateVR/__src/dragontesa_pc_gatevr_mobile/GateVR/Binaries/Android/GateVR_Symbols_v1/GateVR-arm64\\\""
+						],
+						"lldbPreTargetCreateCommands": [
+							"command script import \\\"C:/UnrealEngine/Engine/Extras/LLDBDataFormatters/UEDataFormatters_2ByteChars.py\\\""
+						],
+						"lldbPostTargetCreateCommands": [
+							"process handle --pass true --stop false --notify true SIGILL"
+						]
+					}
+				}
+			},
+			{
+				"name": "GateVR Oculus (Test) Launch",
+				"request": "launch",
+				"preLaunchTask": "GateVR Android Test Deploy",
+				"type": "fb-lldb",
+				"android": {
+					"application": {
+						"package": "com.epicgames.GateVR",
+						"activity": "com.epicgames.unreal.GameActivity"
+					},
+					"lldbConfig": {
+						"librarySearchPaths": [
+							"\\\"C:/Users/Dragon Tesa/spider.w/teamgate/GateVR/__src/dragontesa_pc_gatevr_mobile/GateVR/Binaries/Android/GateVR_Symbols_v1/GateVR-arm64\\\""
+						],
+						"lldbPreTargetCreateCommands": [
+							"command script import \\\"C:/UnrealEngine/Engine/Extras/LLDBDataFormatters/UEDataFormatters_2ByteChars.py\\\""
+						],
+						"lldbPostTargetCreateCommands": [
+							"process handle --pass true --stop false --notify true SIGILL"
+						]
+					}
+				}
+			},
+			{
+				"name": "GateVR Oculus (Shipping) Launch",
+				"request": "launch",
+				"preLaunchTask": "GateVR Android Shipping Deploy",
+				"type": "fb-lldb",
+				"android": {
+					"application": {
+						"package": "com.epicgames.GateVR",
+						"activity": "com.epicgames.unreal.GameActivity"
+					},
+					"lldbConfig": {
+						"librarySearchPaths": [
+							"\\\"C:/Users/Dragon Tesa/spider.w/teamgate/GateVR/__src/dragontesa_pc_gatevr_mobile/GateVR/Binaries/Android/GateVR_Symbols_v1/GateVR-arm64\\\""
+						],
+						"lldbPreTargetCreateCommands": [
+							"command script import \\\"C:/UnrealEngine/Engine/Extras/LLDBDataFormatters/UEDataFormatters_2ByteChars.py\\\""
+						],
+						"lldbPostTargetCreateCommands": [
+							"process handle --pass true --stop false --notify true SIGILL"
+						]
+					}
+				}
+			},
+			{
+				"name": "Launch GateVRClient (Debug)",
+				"request": "launch",
+				"program": "C:\\Users\\Dragon Tesa\\spider.w\\teamgate\\GateVR\\__src\\dragontesa_pc_gatevr_mobile\\GateVR\\Binaries\\Win64\\GateVRClient-Win64-Debug.exe",
+				"preLaunchTask": "GateVRClient Win64 Debug Build",
+				"args": [
+				],
+				"cwd": "C:\\UnrealEngine",
+				"stopAtEntry": false,
+				"console": "externalTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "C:\\UnrealEngine\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis"
+			},
+			{
+				"name": "Launch GateVRClient (DebugGame)",
+				"request": "launch",
+				"program": "C:\\Users\\Dragon Tesa\\spider.w\\teamgate\\GateVR\\__src\\dragontesa_pc_gatevr_mobile\\GateVR\\Binaries\\Win64\\GateVRClient-Win64-DebugGame.exe",
+				"preLaunchTask": "GateVRClient Win64 DebugGame Build",
+				"args": [
+				],
+				"cwd": "C:\\UnrealEngine",
+				"stopAtEntry": false,
+				"console": "externalTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "C:\\UnrealEngine\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis"
+			},
+			{
+				"name": "Launch GateVRClient (Development)",
+				"request": "launch",
+				"program": "C:\\Users\\Dragon Tesa\\spider.w\\teamgate\\GateVR\\__src\\dragontesa_pc_gatevr_mobile\\GateVR\\Binaries\\Win64\\GateVRClient.exe",
+				"preLaunchTask": "GateVRClient Win64 Development Build",
+				"args": [
+				],
+				"cwd": "C:\\UnrealEngine",
+				"stopAtEntry": false,
+				"console": "externalTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "C:\\UnrealEngine\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis"
+			},
+			{
+				"name": "Launch GateVRClient (Test)",
+				"request": "launch",
+				"program": "C:\\Users\\Dragon Tesa\\spider.w\\teamgate\\GateVR\\__src\\dragontesa_pc_gatevr_mobile\\GateVR\\Binaries\\Win64\\GateVRClient-Win64-Test.exe",
+				"preLaunchTask": "GateVRClient Win64 Test Build",
+				"args": [
+				],
+				"cwd": "C:\\UnrealEngine",
+				"stopAtEntry": false,
+				"console": "externalTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "C:\\UnrealEngine\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis"
+			},
+			{
+				"name": "Launch GateVRClient (Shipping)",
+				"request": "launch",
+				"program": "C:\\Users\\Dragon Tesa\\spider.w\\teamgate\\GateVR\\__src\\dragontesa_pc_gatevr_mobile\\GateVR\\Binaries\\Win64\\GateVRClient-Win64-Shipping.exe",
+				"preLaunchTask": "GateVRClient Win64 Shipping Build",
+				"args": [
+				],
+				"cwd": "C:\\UnrealEngine",
+				"stopAtEntry": false,
+				"console": "externalTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "C:\\UnrealEngine\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis"
+			},
+			{
+				"name": "GateVRClient Oculus (Debug) Launch",
+				"request": "launch",
+				"preLaunchTask": "GateVRClient Android Debug Deploy",
+				"type": "fb-lldb",
+				"android": {
+					"application": {
+						"package": "com.epicgames.GateVRClient",
+						"activity": "com.epicgames.unreal.GameActivity"
+					},
+					"lldbConfig": {
+						"librarySearchPaths": [
+							"\\\"C:/Users/Dragon Tesa/spider.w/teamgate/GateVR/__src/dragontesa_pc_gatevr_mobile/GateVR/Binaries/Android/GateVRClient_Symbols_v1/GateVRClient-arm64\\\""
+						],
+						"lldbPreTargetCreateCommands": [
+							"command script import \\\"C:/UnrealEngine/Engine/Extras/LLDBDataFormatters/UEDataFormatters_2ByteChars.py\\\""
+						],
+						"lldbPostTargetCreateCommands": [
+							"process handle --pass true --stop false --notify true SIGILL"
+						]
+					}
+				}
+			},
+			{
+				"name": "GateVRClient Oculus (DebugGame) Launch",
+				"request": "launch",
+				"preLaunchTask": "GateVRClient Android DebugGame Deploy",
+				"type": "fb-lldb",
+				"android": {
+					"application": {
+						"package": "com.epicgames.GateVRClient",
+						"activity": "com.epicgames.unreal.GameActivity"
+					},
+					"lldbConfig": {
+						"librarySearchPaths": [
+							"\\\"C:/Users/Dragon Tesa/spider.w/teamgate/GateVR/__src/dragontesa_pc_gatevr_mobile/GateVR/Binaries/Android/GateVRClient_Symbols_v1/GateVRClient-arm64\\\""
+						],
+						"lldbPreTargetCreateCommands": [
+							"command script import \\\"C:/UnrealEngine/Engine/Extras/LLDBDataFormatters/UEDataFormatters_2ByteChars.py\\\""
+						],
+						"lldbPostTargetCreateCommands": [
+							"process handle --pass true --stop false --notify true SIGILL"
+						]
+					}
+				}
+			},
+			{
+				"name": "GateVRClient Oculus (Development) Launch",
+				"request": "launch",
+				"preLaunchTask": "GateVRClient Android Development Deploy",
+				"type": "fb-lldb",
+				"android": {
+					"application": {
+						"package": "com.epicgames.GateVRClient",
+						"activity": "com.epicgames.unreal.GameActivity"
+					},
+					"lldbConfig": {
+						"librarySearchPaths": [
+							"\\\"C:/Users/Dragon Tesa/spider.w/teamgate/GateVR/__src/dragontesa_pc_gatevr_mobile/GateVR/Binaries/Android/GateVRClient_Symbols_v1/GateVRClient-arm64\\\""
+						],
+						"lldbPreTargetCreateCommands": [
+							"command script import \\\"C:/UnrealEngine/Engine/Extras/LLDBDataFormatters/UEDataFormatters_2ByteChars.py\\\""
+						],
+						"lldbPostTargetCreateCommands": [
+							"process handle --pass true --stop false --notify true SIGILL"
+						]
+					}
+				}
+			},
+			{
+				"name": "GateVRClient Oculus (Development) Attach",
+				"request": "attach",
+				"type": "fb-lldb",
+				"android": {
+					"application": {
+						"package": "com.epicgames.GateVRClient",
+						"activity": "com.epicgames.unreal.GameActivity"
+					},
+					"lldbConfig": {
+						"librarySearchPaths": [
+							"\\\"C:/Users/Dragon Tesa/spider.w/teamgate/GateVR/__src/dragontesa_pc_gatevr_mobile/GateVR/Binaries/Android/GateVRClient_Symbols_v1/GateVRClient-arm64\\\""
+						],
+						"lldbPreTargetCreateCommands": [
+							"command script import \\\"C:/UnrealEngine/Engine/Extras/LLDBDataFormatters/UEDataFormatters_2ByteChars.py\\\""
+						],
+						"lldbPostTargetCreateCommands": [
+							"process handle --pass true --stop false --notify true SIGILL"
+						]
+					}
+				}
+			},
+			{
+				"name": "GateVRClient Oculus (Test) Launch",
+				"request": "launch",
+				"preLaunchTask": "GateVRClient Android Test Deploy",
+				"type": "fb-lldb",
+				"android": {
+					"application": {
+						"package": "com.epicgames.GateVRClient",
+						"activity": "com.epicgames.unreal.GameActivity"
+					},
+					"lldbConfig": {
+						"librarySearchPaths": [
+							"\\\"C:/Users/Dragon Tesa/spider.w/teamgate/GateVR/__src/dragontesa_pc_gatevr_mobile/GateVR/Binaries/Android/GateVRClient_Symbols_v1/GateVRClient-arm64\\\""
+						],
+						"lldbPreTargetCreateCommands": [
+							"command script import \\\"C:/UnrealEngine/Engine/Extras/LLDBDataFormatters/UEDataFormatters_2ByteChars.py\\\""
+						],
+						"lldbPostTargetCreateCommands": [
+							"process handle --pass true --stop false --notify true SIGILL"
+						]
+					}
+				}
+			},
+			{
+				"name": "GateVRClient Oculus (Shipping) Launch",
+				"request": "launch",
+				"preLaunchTask": "GateVRClient Android Shipping Deploy",
+				"type": "fb-lldb",
+				"android": {
+					"application": {
+						"package": "com.epicgames.GateVRClient",
+						"activity": "com.epicgames.unreal.GameActivity"
+					},
+					"lldbConfig": {
+						"librarySearchPaths": [
+							"\\\"C:/Users/Dragon Tesa/spider.w/teamgate/GateVR/__src/dragontesa_pc_gatevr_mobile/GateVR/Binaries/Android/GateVRClient_Symbols_v1/GateVRClient-arm64\\\""
+						],
+						"lldbPreTargetCreateCommands": [
+							"command script import \\\"C:/UnrealEngine/Engine/Extras/LLDBDataFormatters/UEDataFormatters_2ByteChars.py\\\""
+						],
+						"lldbPostTargetCreateCommands": [
+							"process handle --pass true --stop false --notify true SIGILL"
+						]
+					}
+				}
+			},
+			{
+				"name": "Launch GateVREditor (Debug)",
+				"request": "launch",
+				"program": "C:\\UnrealEngine\\Engine\\Binaries\\Win64\\UnrealEditor-Win64-Debug.exe",
+				"preLaunchTask": "GateVREditor Win64 Debug Build",
+				"args": [
+					"C:\\Users\\Dragon Tesa\\spider.w\\teamgate\\GateVR\\__src\\dragontesa_pc_gatevr_mobile\\GateVR\\GateVR.uproject"
+				],
+				"cwd": "C:\\UnrealEngine",
+				"stopAtEntry": false,
+				"console": "externalTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "C:\\UnrealEngine\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis"
+			},
+			{
+				"name": "Launch GateVREditor (DebugGame)",
+				"request": "launch",
+				"program": "C:\\UnrealEngine\\Engine\\Binaries\\Win64\\UnrealEditor-Win64-DebugGame.exe",
+				"preLaunchTask": "GateVREditor Win64 DebugGame Build",
+				"args": [
+					"C:\\Users\\Dragon Tesa\\spider.w\\teamgate\\GateVR\\__src\\dragontesa_pc_gatevr_mobile\\GateVR\\GateVR.uproject"
+				],
+				"cwd": "C:\\UnrealEngine",
+				"stopAtEntry": false,
+				"console": "externalTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "C:\\UnrealEngine\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis"
+			},
+			{
+				"name": "Launch GateVREditor (Development)",
+				"request": "launch",
+				"program": "C:\\UnrealEngine\\Engine\\Binaries\\Win64\\UnrealEditor.exe",
+				"preLaunchTask": "GateVREditor Win64 Development Build",
+				"args": [
+					"C:\\Users\\Dragon Tesa\\spider.w\\teamgate\\GateVR\\__src\\dragontesa_pc_gatevr_mobile\\GateVR\\GateVR.uproject"
+				],
+				"cwd": "C:\\UnrealEngine",
+				"stopAtEntry": false,
+				"console": "externalTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "C:\\UnrealEngine\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis"
+			},
+			{
+				"name": "Launch GateVRServer (Debug)",
+				"request": "launch",
+				"program": "C:\\Users\\Dragon Tesa\\spider.w\\teamgate\\GateVR\\__src\\dragontesa_pc_gatevr_mobile\\GateVR\\Binaries\\Win64\\GateVRServer-Win64-Debug.exe",
+				"preLaunchTask": "GateVRServer Win64 Debug Build",
+				"args": [
+				],
+				"cwd": "C:\\UnrealEngine",
+				"stopAtEntry": false,
+				"console": "externalTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "C:\\UnrealEngine\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis"
+			},
+			{
+				"name": "Launch GateVRServer (DebugGame)",
+				"request": "launch",
+				"program": "C:\\Users\\Dragon Tesa\\spider.w\\teamgate\\GateVR\\__src\\dragontesa_pc_gatevr_mobile\\GateVR\\Binaries\\Win64\\GateVRServer-Win64-DebugGame.exe",
+				"preLaunchTask": "GateVRServer Win64 DebugGame Build",
+				"args": [
+				],
+				"cwd": "C:\\UnrealEngine",
+				"stopAtEntry": false,
+				"console": "externalTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "C:\\UnrealEngine\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis"
+			},
+			{
+				"name": "Launch GateVRServer (Development)",
+				"request": "launch",
+				"program": "C:\\Users\\Dragon Tesa\\spider.w\\teamgate\\GateVR\\__src\\dragontesa_pc_gatevr_mobile\\GateVR\\Binaries\\Win64\\GateVRServer.exe",
+				"preLaunchTask": "GateVRServer Win64 Development Build",
+				"args": [
+				],
+				"cwd": "C:\\UnrealEngine",
+				"stopAtEntry": false,
+				"console": "externalTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "C:\\UnrealEngine\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis"
+			},
+			{
+				"name": "Launch GateVRServer (Test)",
+				"request": "launch",
+				"program": "C:\\Users\\Dragon Tesa\\spider.w\\teamgate\\GateVR\\__src\\dragontesa_pc_gatevr_mobile\\GateVR\\Binaries\\Win64\\GateVRServer-Win64-Test.exe",
+				"preLaunchTask": "GateVRServer Win64 Test Build",
+				"args": [
+				],
+				"cwd": "C:\\UnrealEngine",
+				"stopAtEntry": false,
+				"console": "externalTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "C:\\UnrealEngine\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis"
+			},
+			{
+				"name": "Launch GateVRServer (Shipping)",
+				"request": "launch",
+				"program": "C:\\Users\\Dragon Tesa\\spider.w\\teamgate\\GateVR\\__src\\dragontesa_pc_gatevr_mobile\\GateVR\\Binaries\\Win64\\GateVRServer-Win64-Shipping.exe",
+				"preLaunchTask": "GateVRServer Win64 Shipping Build",
+				"args": [
+				],
+				"cwd": "C:\\UnrealEngine",
+				"stopAtEntry": false,
+				"console": "externalTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "C:\\UnrealEngine\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis"
+			},
+			{
+				"name": "Generate Project Files",
+				"type": "coreclr",
+				"request": "launch",
+				"preLaunchTask": "UnrealBuildTool Win64 Development Build",
+				"program": "C:\\UnrealEngine\\Engine\\Build\\BatchFiles\\RunUBT.bat",
+				"args": [
+					"-projectfiles",
+					"-vscode",
+					"-project=C:\\Users\\Dragon Tesa\\spider.w\\teamgate\\GateVR\\__src\\dragontesa_pc_gatevr_mobile\\GateVR\\GateVR.uproject",
+					"-game",
+					"-engine",
+					"-dotnet"
+				],
+				"console": "externalTerminal",
+				"stopAtEntry": false,
+				"cwd": "C:\\UnrealEngine"
+			}
+		]
+	}
+}
